@@ -1,0 +1,108 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.button {
+  padding: 5px 10px;
+  margin: 5px 10px;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.notificationItem {
+  padding: 10px;
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success {
+  background-color: #4caf50;
+}
+.info {
+  background-color: #2196f3;
+}
+.warning {
+  background-color: #ff9800;
+}
+.error {
+  background-color: #f44336;
+}
+.top-right{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.bottom-right{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.top-left{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+.bottom-left{
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+}
+
+/* Fade Animation */
+.fade {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Pop Animation */
+.pop {
+  animation: popIn 0.3s ease forwards;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Slide Animation */
+.slide {
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.leaving {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
