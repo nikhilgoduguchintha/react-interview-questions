@@ -1,0 +1,22 @@
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+}
+.visible{
+    cursor: pointer;
+    border: 1px solid black;
+}
+.hidden{
+    display: hidden;
+    opacity: 0;
+}
+.selected{
+    background-color: aquamarine;
+    cursor: not-allowed;
+}
