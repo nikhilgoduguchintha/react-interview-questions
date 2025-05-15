@@ -1,0 +1,20 @@
+.sidebar{
+  width: 300px;
+  min-height: 100vh;
+  max-height: auto;
+  background-color: rgb(52, 57, 59);
+}
+
+.node-content ul{
+  list-style: none;
+}
+.node a{
+  text-decoration: none;
+  color: #0097e6;
+}
+
+/* .node{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+} */
